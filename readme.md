@@ -1,4 +1,4 @@
-# [broccoli](https://github.com/joliss/broccoli)-defeatureify [![Build Status](https://travis-ci.org/sindresorhus/broccoli-defeatureify.png?branch=master)](https://travis-ci.org/sindresorhus/broccoli-defeatureify)
+# [broccoli](https://github.com/joliss/broccoli)-defeatureify [![Build Status](https://travis-ci.org/sindresorhus/broccoli-defeatureify.svg?branch=master)](https://travis-ci.org/sindresorhus/broccoli-defeatureify)
 
 > Remove specially flagged feature blocks and debug statements using [Defeatureify](https://github.com/thomasboyt/defeatureify)
 
@@ -9,12 +9,12 @@ Defeatureify is used in the [ember-dev](https://github.com/emberjs/ember-dev) pa
 
 ## Install
 
-```
-npm install --save broccoli-defeatureify
+```bash
+$ npm install --save broccoli-defeatureify
 ```
 
 
-## Example
+## Usage
 
 ```js
 var defeatureify = require('broccoli-defeatureify');
@@ -31,4 +31,4 @@ See the Defeatureify [options](https://github.com/craigteegarden/grunt-ember-def
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
