@@ -9,7 +9,7 @@ function DefeatureifyFilter(inputTree, options) {
 
 	this.inputTree = inputTree;
 	this.options = options || {};
-	this.options.enabled = this.options.features;
+	this.options.enabled = options.enabled || options.features;
 }
 
 DefeatureifyFilter.prototype = Object.create(Filter.prototype);
