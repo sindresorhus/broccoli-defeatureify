@@ -9,7 +9,7 @@ Defeatureify is used in the [ember-dev](https://github.com/emberjs/ember-dev) pa
 
 ## Install
 
-```bash
+```sh
 $ npm install --save broccoli-defeatureify
 ```
 
@@ -31,4 +31,4 @@ See the Defeatureify [options](https://github.com/craigteegarden/grunt-ember-def
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](http://sindresorhus.com)
