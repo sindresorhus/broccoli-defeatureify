@@ -9,8 +9,8 @@ Defeatureify is used in the [ember-dev](https://github.com/emberjs/ember-dev) pa
 
 ## Install
 
-```sh
-$ npm install --save broccoli-defeatureify
+```
+$ npm install --save-dev broccoli-defeatureify
 ```
 
 
@@ -24,7 +24,7 @@ tree = defeatureify(tree, options);
 
 ## API
 
-### defeatureify(options)
+### defeatureify([options])
 
 See the Defeatureify [options](https://github.com/craigteegarden/grunt-ember-defeatureify#options).
 
