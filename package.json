@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "broccoli build temp && mocha"
+    "test": "trash --force temp tmp && broccoli build temp && mocha"
   },
   "files": [
     "index.js"
@@ -31,13 +31,15 @@
     "ast"
   ],
   "dependencies": {
-    "broccoli-filter": "^0.1.6",
-    "defeatureify": "^0.2.0"
+    "broccoli-persistent-filter": "0.0.2",
+    "defeatureify": "^0.2.0",
+    "md5-hex": "^1.0.2"
   },
   "devDependencies": {
     "broccoli": "^0.12.3",
     "broccoli-cli": "0.0.1",
     "mocha": "*",
-    "rimraf": "^2.2.6"
+    "rimraf": "^2.2.6",
+    "trash": "^1.4.1"
   }
 }
