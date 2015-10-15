@@ -7,6 +7,8 @@ function DefeatureifyFilter(inputTree, options) {
 		return new DefeatureifyFilter(inputTree, options);
 	}
 
+	Filter.call(this, inputTree);
+
 	this.inputTree = inputTree;
 	this.options = options || {};
 	this.options.enabled = options.enabled || options.features;
