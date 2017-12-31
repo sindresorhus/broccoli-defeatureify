@@ -17,18 +17,18 @@ $ npm install --save-dev broccoli-defeatureify
 ## Usage
 
 ```js
-var defeatureify = require('broccoli-defeatureify');
-tree = defeatureify(tree, options);
+const Defeatureify = require('broccoli-defeatureify');
+tree = new Defeatureify(tree, options);
 ```
 
 
 ## API
 
-### defeatureify([options])
+### Defeatureify([options])
 
 See the Defeatureify [options](https://github.com/craigteegarden/grunt-ember-defeatureify#options).
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

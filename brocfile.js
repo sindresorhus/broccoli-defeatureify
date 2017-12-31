@@ -1,5 +1,7 @@
 'use strict';
-module.exports = require('./')('fixture', {
+const Defeatureify = require('.');
+
+module.exports = new Defeatureify('fixture', {
 	enableStripDebug: true,
 	debugStatements: [
 		'Ember.warn',

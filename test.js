@@ -1,14 +1,13 @@
-'use strict';
-var assert = require('assert');
-var fs = require('fs');
-var rimraf = require('rimraf');
+import fs from 'fs';
+import test from 'ava';
+import del from 'del';
 
-afterEach(function () {
-	rimraf.sync('temp');
+test.afterEach(() => {
+	del.sync('temp');
 });
 
-it('should run code through Defeatureify', function () {
-	assert.equal(
+test('run code through Defeatureify', t => {
+	t.is(
 		fs.readFileSync('temp/fixture.js', 'utf8'),
 		fs.readFileSync('fixture/expected.js', 'utf8')
 	);

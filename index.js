@@ -1,27 +1,24 @@
 'use strict';
-var Filter = require('broccoli-filter');
-var defeatureify = require('defeatureify');
+const Filter = require('broccoli-filter');
+const defeatureify = require('defeatureify');
 
-function DefeatureifyFilter(inputTree, options) {
-	if (!(this instanceof DefeatureifyFilter)) {
-		return new DefeatureifyFilter(inputTree, options);
+module.exports = class extends Filter {
+	constructor(inputTree, options) {
+		super(inputTree);
+		this.inputTree = inputTree;
+		this.options = options || {};
+		this.options.enabled = options.enabled || options.features;
 	}
 
-	Filter.call(this, inputTree);
+	get extensions() {
+		return ['js'];
+	}
 
-	this.inputTree = inputTree;
-	this.options = options || {};
-	this.options.enabled = options.enabled || options.features;
-}
+	get targetExtension() {
+		return 'js';
+	}
 
-DefeatureifyFilter.prototype = Object.create(Filter.prototype);
-DefeatureifyFilter.prototype.constructor = DefeatureifyFilter;
-
-DefeatureifyFilter.prototype.extensions = ['js'];
-DefeatureifyFilter.prototype.targetExtension = 'js';
-
-DefeatureifyFilter.prototype.processString = function (str) {
-	return defeatureify(str, this.options);
+	processString(text) {
+		return defeatureify(text, this.options);
+	}
 };
-
-module.exports = DefeatureifyFilter;

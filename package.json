@@ -1,43 +1,44 @@
 {
-  "name": "broccoli-defeatureify",
-  "version": "1.1.0",
-  "description": "Remove specially flagged feature blocks and debug statements using Defeatureify",
-  "license": "MIT",
-  "repository": "sindresorhus/broccoli-defeatureify",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "broccoli build temp && mocha"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "broccoli-plugin",
-    "rewriting",
-    "transformation",
-    "defeatureify",
-    "ember",
-    "emberjs",
-    "debug",
-    "strip",
-    "esprima",
-    "ast"
-  ],
-  "dependencies": {
-    "broccoli-filter": "^1.2.2",
-    "defeatureify": "^0.2.0"
-  },
-  "devDependencies": {
-    "broccoli": "^0.16.8",
-    "broccoli-cli": "^1.0.0",
-    "mocha": "*",
-    "rimraf": "^2.2.6"
-  }
+	"name": "broccoli-defeatureify",
+	"version": "1.1.0",
+	"description": "Remove specially flagged feature blocks and debug statements using Defeatureify",
+	"license": "MIT",
+	"repository": "sindresorhus/broccoli-defeatureify",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && broccoli build temp && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"broccoli-plugin",
+		"rewriting",
+		"transformation",
+		"defeatureify",
+		"ember",
+		"emberjs",
+		"debug",
+		"strip",
+		"esprima",
+		"ast"
+	],
+	"dependencies": {
+		"broccoli-filter": "^1.2.2",
+		"defeatureify": "^0.2.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"broccoli": "^1.1.4",
+		"broccoli-cli": "^1.0.0",
+		"del": "^3.0.0",
+		"xo": "*"
+	}
 }
