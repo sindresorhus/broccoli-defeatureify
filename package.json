@@ -1,6 +1,6 @@
 {
 	"name": "broccoli-defeatureify",
-	"version": "1.1.0",
+	"version": "2.0.0",
 	"description": "Remove specially flagged feature blocks and debug statements using Defeatureify",
 	"license": "MIT",
 	"repository": "sindresorhus/broccoli-defeatureify",
