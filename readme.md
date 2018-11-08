@@ -1,3 +1,9 @@
+# Deprecated
+
+The Defeatureify project is no longer maintained.
+
+---
+
 # [broccoli](https://github.com/joliss/broccoli)-defeatureify [![Build Status](https://travis-ci.org/sindresorhus/broccoli-defeatureify.svg?branch=master)](https://travis-ci.org/sindresorhus/broccoli-defeatureify)
 
 > Remove specially flagged feature blocks and debug statements using [Defeatureify](https://github.com/thomasboyt/defeatureify)
